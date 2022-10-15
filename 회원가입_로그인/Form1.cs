@@ -32,7 +32,7 @@ namespace 회원가입_로그인
                 using (MySqlConnection conn = new MySqlConnection(Conn))
                 {
                     conn.Open();
-                    MySqlCommand msc = new MySqlCommand("insert into ui(name,tall,weight) values('" + name_text + "','" + tall_text + "','"+weight_text+"');", conn); ;
+                    MySqlCommand msc = new MySqlCommand("insert into ui(name,tall,weight) values('" + name_text.Text + "','" + tall_text.Text + "','"+weight_text.Text+"');", conn); ;
                     int insert = msc.ExecuteNonQuery();
 
 
